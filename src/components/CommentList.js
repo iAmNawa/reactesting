@@ -1,5 +1,14 @@
-import React from 'react';
+import React from "react";
 
-export default () => {
-  return <div>Comment List</div>;
+const CommentList = props => {
+  return (
+    <ul>
+      Comment List
+      {props.comments.map(comment => {
+        return <li key={comment}>{comment}</li>;
+      })}
+    </ul>
+  );
 };
+
+export default CommentList;
