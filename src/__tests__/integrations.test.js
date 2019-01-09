@@ -8,5 +8,5 @@ it('can fetch a list of comments and display them', () => {
 
   // find the 'fetchComments' button and click it
 
-  //Expect to find a list of comments
+  // Expect to find a list of comments
 });
