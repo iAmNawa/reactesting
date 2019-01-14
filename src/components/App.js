@@ -24,13 +24,13 @@ class App extends Component {
   renderHeader() {
     return (
       <ul>
-        <l1>
+        <li>
           <Link to="/">Home</Link>
-        </l1>
-        <l1>
+        </li>
+        <li>
           <Link to="/post">Post A Comment</Link>
-        </l1>
-        <l1>{this.renderButton()}</l1>
+        </li>
+        <li>{this.renderButton()}</li>
       </ul>
     );
   }
