@@ -9,6 +9,7 @@ class CommentBox extends Component {
     this.shouldNavigateAway();
   }
 
+  // If a user signs out while viewing the component
   componentDidUpdate() {
     this.shouldNavigateAway();
   }
