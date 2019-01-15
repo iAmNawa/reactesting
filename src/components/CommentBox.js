@@ -5,21 +5,6 @@ import * as actions from 'actions';
 class CommentBox extends Component {
   state = { comment: ''};
 
-  componentDidMount() {
-    this.shouldNavigateAway();
-  }
-
-  // If a user signs out while viewing the component
-  componentDidUpdate() {
-    this.shouldNavigateAway();
-  }
-
-  shouldNavigateAway() {
-    if (!this.props.auth) {
-      this.props.history.push('/');
-    }
-  }
-
   handleChange = event => {
     this.setState({ comment: event.target.value });
   };
@@ -48,8 +33,4 @@ class CommentBox extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { auth: state.auth };
-}
-
-export default connect(mapStateToProps, actions)(CommentBox);
+export default connect(null, actions)(CommentBox);
